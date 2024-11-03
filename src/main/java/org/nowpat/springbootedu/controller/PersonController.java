@@ -12,6 +12,6 @@ public class PersonController {
 
     @GetMapping("/getById")
     public ResponseEntity<Person> getPersonById(Long id) {
-        return ResponseEntity.ok(new Person(1L, "first"));
+        return ResponseEntity.ok(new Person(id, "name"));
     }
 }
