@@ -16,15 +16,15 @@ public class ErrorHandler {
 
     @ExceptionHandler(value = PersonNotFoundException.class)
     public ResponseEntity<String> handle(PersonNotFoundException ex) {
-        log.error("Person not found exception: ", ex);
+        log.error("PersonEntity not found exception: ", ex);
         return new ResponseEntity<>(ex.getMessage(), new HttpHeaders(), NOT_FOUND);
     }
-
-    @ExceptionHandler(value = {Exception.class})
-    public ResponseEntity<String> handle(Exception ex) {
-        log.error("Unhandled / Unexpected Exception: ", ex);
-        return new ResponseEntity<>(ex.getMessage(), new HttpHeaders(), INTERNAL_SERVER_ERROR);
-    }
+//
+//    @ExceptionHandler(value = {Exception.class})
+//    public ResponseEntity<String> handle(Exception ex) {
+//        log.error("Unhandled / Unexpected Exception: ", ex);
+//        return new ResponseEntity<>(ex.getMessage(), new HttpHeaders(), INTERNAL_SERVER_ERROR);
+//    }
 
 
 }
