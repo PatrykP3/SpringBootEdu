@@ -1,17 +1,17 @@
 package org.nowpat.springbootedu.processor;
 
 import java.util.List;
+import lombok.AllArgsConstructor;
 import org.nowpat.springbootedu.printer.Printer;
 import org.nowpat.springbootedu.provider.PrinterProvider;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import static java.util.Objects.isNull;
 
 @Component
+@AllArgsConstructor
 public class Processor {
 
-    @Autowired
     private PrinterProvider printerProvider;
 
     public void process(List<String> lines) {
