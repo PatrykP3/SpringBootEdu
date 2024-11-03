@@ -1,6 +1,6 @@
-package org.nowapat.springbootedu.controller;
+package org.nowpat.springbootedu.controller;
 
-import org.nowapat.springbootedu.model.Person;
+import org.nowpat.springbootedu.model.Person;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,4 +1,4 @@
-package org.nowapat.springbootedu.configuration;
+package org.nowpat.springbootedu.configuration;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;
