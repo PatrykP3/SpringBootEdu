@@ -1,4 +1,4 @@
-package org.nowapat.springbootedu.model;
+package org.nowpat.springbootedu.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

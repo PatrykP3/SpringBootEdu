@@ -1,4 +1,4 @@
-package org.nowapat.springbootedu;
+package org.nowpat.springbootedu;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
