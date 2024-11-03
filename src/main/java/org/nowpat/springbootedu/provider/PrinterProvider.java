@@ -1,19 +1,15 @@
 package org.nowpat.springbootedu.provider;
 
-import java.util.ArrayList;
 import java.util.List;
 import org.nowpat.springbootedu.printer.Printer;
-import org.nowpat.springbootedu.printer.PrinterLong;
-import org.nowpat.springbootedu.printer.PrinterShort;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class PrinterProvider {
 
-    private List<Printer> printers = new ArrayList<>();
-
-    public PrinterProvider() {
-        printers.add(new PrinterLong());
-        printers.add(new PrinterShort());
-    }
+    @Autowired
+    private List<Printer> printers;
 
     public Printer getPrinter(int length) {
         return printers.stream().filter(printer -> printer.canPrint(length)).findFirst().orElse(null);

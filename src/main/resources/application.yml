@@ -1,0 +1,5 @@
+processors:
+  short:
+    length: 3
+  long:
+    length: 3
