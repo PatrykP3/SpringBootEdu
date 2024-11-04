@@ -13,8 +13,7 @@ Ideas to demonstrate:
 * JPA repository and queries autocreation
 * MapStruct mapping
 
-Different examples are on different branches.
-
+Different examples are on different branches:
 * main - like it was downloaded from Spring Initializr.
 * 00 - almost empty project.
 * 01 - example in standard Java.
@@ -24,4 +23,14 @@ Different examples are on different branches.
 * 05 - same as above but with Swagger UI and actuator
 * 06 - same as above but with Open API configuration
 * 07 - same as above but with database name configured making database UI easier to access
-* 08 - repository, error handler and mapper added - to be split into at least two parts
+* 08 - same as above but with JPA repository
+* 09 - same as above but with error handler
+* 10 - same as above but with MapStruct mapper
+
+Endpoint available since branch 04:
+* http://localhost:8080/person/getById (integer parameter expected) 
+
+Additional endpoints available since branch 04:
+* http://localhost:8080/swagger-ui/index.html
+* http://localhost:8080/actuator/health
+* http://localhost:8080/v3/api-docs
