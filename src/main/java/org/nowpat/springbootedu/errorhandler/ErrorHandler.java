@@ -16,7 +16,7 @@ public class ErrorHandler {
 
     @ExceptionHandler(value = PersonNotFoundException.class)
     public ResponseEntity<String> handle(PersonNotFoundException ex) {
-        log.error("PersonEntity not found exception: ", ex);
+        log.error("Person not found exception: ", ex);
         return new ResponseEntity<>(ex.getMessage(), new HttpHeaders(), NOT_FOUND);
     }
 

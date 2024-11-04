@@ -10,7 +10,7 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name = "person")
-public class PersonEntity {
+public class Person {
 
     @Id
     private Long id;

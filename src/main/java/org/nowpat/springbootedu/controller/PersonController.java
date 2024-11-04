@@ -1,6 +1,6 @@
 package org.nowpat.springbootedu.controller;
 
-import org.nowpat.springbootedu.model.PersonDto;
+import org.nowpat.springbootedu.model.Person;
 import org.nowpat.springbootedu.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -16,7 +16,7 @@ public class PersonController {
     private PersonService personService;
 
     @GetMapping("/getById")
-    public ResponseEntity<PersonDto> getPersonById(Long id) {
+    public ResponseEntity<Person> getPersonById(Long id) {
         return ResponseEntity.ok(personService.findPersonById(id));
     }
 }
