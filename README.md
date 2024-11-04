@@ -24,4 +24,4 @@ Different examples are on different branches.
 * 05 - same as above but with Swagger UI and actuator
 * 06 - same as above but with Open API configuration
 * 07 - same as above but with database name configured making database UI easier to access
-* 08 - repository, error handler and mapper added - to be splited into at least two parts
+* 08 - repository, error handler and mapper added - to be split into at least two parts
