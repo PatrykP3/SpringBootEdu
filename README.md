@@ -30,7 +30,7 @@ Different examples are on different branches:
 Endpoint available since branch 04:
 * http://localhost:8080/person/getById (integer parameter expected) 
 
-Additional endpoints available since branch 04:
+Additional endpoints available since branch 05:
 * http://localhost:8080/swagger-ui/index.html
 * http://localhost:8080/v3/api-docs
 * http://localhost:8080/actuator
