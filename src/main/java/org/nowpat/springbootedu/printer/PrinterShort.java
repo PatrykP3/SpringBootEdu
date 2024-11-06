@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class PrinterShort implements Printer {
 
-    @Value("${processors.short.length}")
+    @Value("${printers.printer_short.length}")
     Integer maxLength;
 
     @Override

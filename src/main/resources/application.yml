@@ -1,5 +1,5 @@
-processors:
-  short:
+printers:
+  printer_short:
     length: 3
-  long:
+  printer_long:
     length: 3

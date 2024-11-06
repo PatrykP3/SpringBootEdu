@@ -1,17 +1,16 @@
 package org.nowpat.springbootedu.printer;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
+import lombok.AllArgsConstructor;
+import org.nowpat.springbootedu.configuration.PrintersConfiguration;
 
-@Component
+@AllArgsConstructor
 public class PrinterLong implements Printer {
 
-    @Value("${processors.long.length}")
-    Integer minLength;
+    PrintersConfiguration printersConfiguration;
 
     @Override
     public boolean canPrint(int length) {
-        return length > minLength;
+        return length > printersConfiguration.getPrinterLong().getLength();
     }
 
     @Override
