@@ -8,10 +8,10 @@ Ideas to demonstrate:
 * Inversion of Control (as Dependency Injection implemented as autowiring)
 * list autowiring
 * autoconfiguration with default values
-* reading properties from configuration file
-* REST controller
+* reading properties from configuration file - two different approaches
+* REST controller with automatically created actuator endpoints and Swagger UI
 * JPA repository and queries autocreation
-* MapStruct mapping
+* MapStruct mapping with mapper as a Spring component
 
 Different examples are on different branches:
 * main - like it was downloaded from Spring Initializr.
