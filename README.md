@@ -18,7 +18,7 @@ Different examples are on different branches:
 * 00 - almost empty project.
 * 01 - example in standard Java.
 * 02 - same as above but with one Spring component
-* 03 - fully springified application from branch 01
+* 03 - fully springified application from branch 01 with two different ways of using properties
 * 04 - basic REST application with one controller
 * 05 - same as above but with Swagger UI and actuator
 * 06 - same as above but with Open API configuration
